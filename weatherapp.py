@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_coords(city):
     url = f"https://nominatim.openstreetmap.org/search?q={city}&format=json"
     headers = {
-        "User-Agent": "python_weather_app(ceo.of.rpg@gmail.com)"
+        "User-Agent": "python_weather_app(user_email)"
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200 and response.json():
